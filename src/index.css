@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-arabic: 'Amiri', serif;
+    --font-quran: 'Amiri Quran', 'Amiri', serif;
+    --font-title: 'Aref Ruqaa', serif;
+    --font-cinzel: 'Cinzel', serif;
+  }
+
+  body {
+    font-family: 'Amiri', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Keyboard focus-visible indicator for high accessibility contrast */
+  :focus-visible {
+    outline: 2px solid #dfbd69;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+/* Smooth fade-in-up animation used in Hero & toasts */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.45s ease-out both;
+}
+
+/* Respect user motion preferences for calm accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Light theme ("الوضع النهاري العاجي") outer canvas while preserving readable dark architectural cards */
+html.light body {
+  background-color: #f7f3eb;
+  color: #03241b;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #ede6d6;
+}
+
+/* Islamic Arch Clip Path and curves */
+.islamic-arch {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+}
+
+.islamic-arch-sm {
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+}
+
+/* Subtle gold hairline borders and glows */
+.gold-hairline {
+  border: 1px solid rgba(197, 160, 89, 0.22);
+}
+
+.gold-hairline-subtle {
+  border: 1px solid rgba(197, 160, 89, 0.12);
+}
+
+.gold-glow {
+  box-shadow: 0 0 35px -5px rgba(197, 160, 89, 0.15);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 40px -5px rgba(197, 160, 89, 0.25);
+}
+
+/* Islamic geometric backdrop pattern */
+.islamic-pattern-bg {
+  background-image: radial-gradient(rgba(197, 160, 89, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom serene scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(2, 24, 18, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.45);
+}
+

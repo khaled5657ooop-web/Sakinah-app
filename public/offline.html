@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أنت غير متصل بالإنترنت | سَكِينَة SAKINAH</title>
+    <meta name="theme-color" content="#021812" />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        background: radial-gradient(circle at top, #064e3b 0%, #032018 38%, #021812 100%);
+        color: #f5efe6;
+        font-family: 'Amiri', 'Segoe UI', Tahoma, Arial, sans-serif;
+        text-align: center;
+      }
+      .card {
+        max-width: 34rem;
+        width: 100%;
+        padding: 2.5rem 2rem;
+        border-radius: 1.75rem;
+        background: linear-gradient(180deg, rgba(3, 36, 27, 0.94), rgba(2, 24, 18, 0.98));
+        border: 1px solid rgba(197, 160, 89, 0.35);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+      }
+      .emblem {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: 0 auto 1.25rem;
+        border-radius: 1.25rem;
+        background: rgba(6, 78, 59, 0.45);
+        border: 1px solid rgba(223, 189, 105, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+        color: #dfbd69;
+        font-size: 2rem;
+        line-height: 1.4;
+      }
+      p {
+        margin: 0 0 1.25rem;
+        color: #d4ccbf;
+        font-size: 1.05rem;
+        line-height: 1.85;
+      }
+      .box {
+        margin: 1.25rem 0 1.75rem;
+        padding: 1rem 1.25rem;
+        border-radius: 1rem;
+        background: rgba(2, 24, 18, 0.75);
+        border: 1px solid rgba(197, 160, 89, 0.2);
+        text-align: right;
+        font-size: 0.95rem;
+        color: #c7beaf;
+        line-height: 1.75;
+      }
+      .box strong {
+        color: #dfbd69;
+        display: block;
+        margin-bottom: 0.35rem;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.75rem;
+        border-radius: 0.9rem;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #021812;
+        background: linear-gradient(90deg, #dfbd69, #c5a059);
+        text-decoration: none;
+      }
+      .btn:hover {
+        filter: brightness(1.06);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="emblem" aria-hidden="true">
+        <img src="/icon.svg" alt="" width="44" height="44" />
+      </div>
+      <h1>الاتصال بالإنترنت منقطع حاليًا</h1>
+      <p>
+        تعذّر الوصول إلى الصفحة المطلوبة لعدم توفر اتصال بالشبكة. يمكنك المحاولة مجددًا عند عودة الإنترنت، أو العودة إلى الواجهة الرئيسية للمنصة.
+      </p>
+      <div class="box">
+        <strong>ما يعمل دون إنترنت بعد التثبيت:</strong>
+        الأذكار اليومية، مكتبة الأدعية، المسبحة الإلكترونية، الأحاديث المحفوظة محليًا، وبوصلة القبلة الحسابية، بينما تتطلب التلاوات الصوتية والبحث النصي ومواقيت الصلاة الحية اتصالًا بالإنترنت.
+      </div>
+      <button class="btn" onclick="window.location.reload()">إعادة المحاولة</button>
+    </main>
+  </body>
+</html>

@@ -1,23 +1,81 @@
-here<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>سَكِينَة | SAKINAH</title>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#021812">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { width: 100%; height: 100%; overflow: hidden; background-color: #021812; }
-        iframe { width: 100%; height: 100%; border: none; display: block; }
-    </style>
-</head>
-<body>
-    <iframe src="https://sakinah1.ai.studio/" allow="geolocation; microphone; autoplay"></iframe>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
+<!doctype html>
+<html lang="ar" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سكينة | منصة إسلامية للقرآن الكريم والأذكار والأدعية</title>
+    <meta
+      name="description"
+      content="سكينة منصة إسلامية مجانية للجميع، تتيح قراءة القرآن الكريم والاستماع إليه، والأذكار والأدعية والأحاديث النبوية ومواقيت الصلاة."
+    />
+    <meta
+      name="keywords"
+      content="سكينة, SAKINAH, القرآن الكريم, مصحف إلكتروني, أذكار الصباح والمساء, أدعية مأثورة, تسبيح إلكتروني, أحاديث نبوية صحيحة, مواقيت الصلاة, اتجاه القبلة, التقويم الهجري"
+    />
+    <meta name="theme-color" content="#021812" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SAKINAH | سَكِينَة" />
+
+    <!-- Icons & PWA Touch Artwork -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- OpenGraph / Social Sharing -->
+    <meta property="og:title" content="سكينة | منصة إسلامية للقرآن الكريم والأذكار والأدعية" />
+    <meta
+      property="og:description"
+      content="سكينة منصة إسلامية مجانية للجميع، تتيح قراءة القرآن الكريم والاستماع إليه، والأذكار والأدعية والأحاديث النبوية ومواقيت الصلاة."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SAKINAH | سَكِينَة" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:image" content="/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="SAKINAH | سَكِينَة — منصة إسلامية مجانية للقرآن والأذكار والهدي النبوي" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="سكينة | منصة إسلامية للقرآن الكريم والأذكار والأدعية" />
+    <meta
+      name="twitter:description"
+      content="منصة إسلامية مجانية للجميع للقرآن الكريم والأذكار والأدعية والأحاديث النبوية ومواقيت الصلاة."
+    />
+    <meta name="twitter:image" content="/og-cover.jpg" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SAKINAH | سَكِينَة",
+        "alternateName": "سكينة",
+        "description": "سكينة منصة إسلامية مجانية للجميع، تتيح قراءة القرآن الكريم والاستماع إليه، والأذكار والأدعية والأحاديث النبوية ومواقيت الصلاة.",
+        "applicationCategory": "ReferenceApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "ar",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
         }
+      }
     </script>
-</body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Amiri+Quran&family=Aref+Ruqaa:wght@400;700&family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#021812] text-[#f5efe6] antialiased selection:bg-[#c5a059]/30 selection:text-[#fbf9f5] transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
+

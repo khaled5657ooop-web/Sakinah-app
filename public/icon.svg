@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="emeraldBg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="60%" stop-color="#032018" />
+      <stop offset="100%" stop-color="#021812" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#dfbd69" />
+      <stop offset="100%" stop-color="#c5a059" />
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dfbd69" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#c5a059" stop-opacity="0.15" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Emerald Canvas -->
+  <rect width="512" height="512" rx="108" fill="url(#emeraldBg)" />
+
+  <!-- Subtle Outer Gold Border Ring -->
+  <rect x="24" y="24" width="464" height="464" rx="88" fill="none" stroke="url(#goldSoft)" stroke-width="3" />
+  <rect x="38" y="38" width="436" height="436" rx="76" fill="none" stroke="#c5a059" stroke-opacity="0.25" stroke-width="1.5" />
+
+  <!-- Sacred 8-Pointed Rub el Hizb Islamic Star Frame -->
+  <g transform="translate(256, 256)">
+    <rect x="-126" y="-126" width="252" height="252" rx="18" fill="none" stroke="url(#goldGrad)" stroke-width="6" />
+    <rect x="-126" y="-126" width="252" height="252" rx="18" transform="rotate(45)" fill="none" stroke="url(#goldGrad)" stroke-width="6" />
+
+    <!-- Inner Circular Filigree -->
+    <circle cx="0" cy="0" r="102" fill="#021812" fill-opacity="0.72" stroke="#c5a059" stroke-opacity="0.45" stroke-width="2" />
+
+    <!-- Luminous Crescent (Hilal) -->
+    <path
+      d="M 18 -64 A 66 66 0 1 0 18 64 A 52 52 0 1 1 18 -64 Z"
+      fill="url(#goldGrad)"
+      transform="translate(-10, 0)"
+    />
+
+    <!-- Companion 8-Pointed Star inside Crescent -->
+    <path
+      d="M 42 -26 L 48 -8 L 66 -2 L 48 4 L 42 22 L 36 4 L 18 -2 L 36 -8 Z"
+      fill="#fbf9f5"
+      opacity="0.95"
+    />
+  </g>
+</svg>

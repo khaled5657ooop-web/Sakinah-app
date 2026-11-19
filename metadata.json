@@ -1,0 +1,6 @@
+{
+  "name": "SAKINAH | سَكِينَة",
+  "description": "منصة إسلامية راقية للقرآن الكريم، الأذكار، الأدعية، الأحاديث النبوية، ومواقيت الصلاة بتصميم إسلامي فاخر يبعث على الهدوء والسكينة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
